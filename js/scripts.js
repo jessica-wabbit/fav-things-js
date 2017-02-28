@@ -8,9 +8,12 @@ $(document).ready(function() {
     var favFoodsInput = $("input#favFood").val();
     var favColorsInput = $("input#favColor").val();
     var favAnimalsInput= $("input#favAnimal").val();
+    var array = [favFoodsInput, favColorsInput, favAnimalsInput];
     var favThings = concatFavs(favFoodsInput, favColorsInput, favAnimalsInput);
-    $("#favThingsOutput").text(favThings);
-    console.log(favThings)
+    $("#favThingsOutput").text(array[0]);
+    console.log(array);
+
+    console.log(array[0]);
 
   });
 });
